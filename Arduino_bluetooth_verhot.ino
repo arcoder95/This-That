@@ -2,6 +2,8 @@
 
    Servo myServo;
    
+   // This code receives data via bluetoothmodule, and opens/ closes venetians blind by using servo motor.
+   
     int const  Servopin = 9;
     int state = 0;
     
