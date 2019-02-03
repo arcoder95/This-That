@@ -9,6 +9,7 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 dht DHT;
 
+// measures the air humidity & temperature, and prints the results on LCD-screen every 2 seconds.
 
 void setup() {
   lcd.begin(16, 2);
