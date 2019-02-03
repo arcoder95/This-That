@@ -8,11 +8,11 @@
     void setup() {
       
       myServo.attach(Servopin);
-      Serial.begin(9600); // Default communication rate of the Bluetooth module
+      Serial.begin(9600); 
     }
     void loop() {
-      if(Serial.available() > 0){ // Checks whether data is comming from the serial port
-        state = Serial.read(); // Reads the data from the serial port
+      if(Serial.available() > 0){ 
+        state = Serial.read();
      }
      if (state == '1') {
       myServo.write(90);
